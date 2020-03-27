@@ -13,6 +13,12 @@ int main(int argc, char const *argv[])
   lld a,b,c,d;
   double ma12l;
 
+  while (testcase1--) 
+  {
+
+
+  }
+
 
 
 
