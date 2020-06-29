@@ -1,4 +1,3 @@
-
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -102,9 +101,6 @@ for (int ij = 0; ij < n; ij++)
   for (int ji = 0; ji < n; ji++)
   {
     m2atrix[ij][ji] = matrix1[ij][ji] ;
-    // m3atrix[ij][ji] = matrix1[ij][ji] ;
-
-
   }
 
 }
@@ -113,7 +109,6 @@ for (int ij = 0; ij < n; ij++)
   std::vector<int> unccessfamily;
 for (int ij = 0; ij < n; ij++)
 {
-  // m2atrix[ij] = new int[n];
 
   for (int ji = 0; ji < n; ji++)
   {
@@ -134,13 +129,11 @@ for (int ij = 0; ij < n; ij++)
 
   for ( it1 = successfamily.begin(); it1!=successfamily.end(); it1++)
   {
-    // cout<<" "<<*it;
     for ( it2 = unccessfamily.begin(); it2!=unccessfamily.end(); it2++)
     {
       if (m2atrix[*it1][*it2]==1)
       {
         m2atrix[*it2][ij] = m2atrix[ij][*it2] = 1;
-        // m3atrix[*it2][ij] = m3atrix[ij][*it2] = 1;
         
       }
     }
@@ -160,30 +153,16 @@ do
             for (int ji = 0; ji < n; ji++)
             {
                 m3atrix[ij][ji] =  m2atrix[ij][ji];
-                // m3atrix[ij][ji] = matrix1[ij][ji] ;
+
             }
         }
-
-
-        // for (int ij = 0; ij < n; ij++)
-        // {
-        //   cout<<"\n";
-        //   for (int j1i = 0; j1i < n; j1i++)
-        //   {
-        //     cout<<m3atrix[ij][j1i]<<" ";
-        //   }
-          
-        // }
-        // cout<<"\n";
         
 
 
 
         for (int ij = 0; ij < n; ij++)
         {
-        // m2atrix[ij] = new int[n];
-        // std::vector<int> successfamily;
-        // std::vector<int> unccessfamily;
+
           for (int ji = 0; ji < n; ji++)
           {
               if (m3atrix[ij][ji]==0)
@@ -209,8 +188,7 @@ do
               if (m3atrix[*it1][*it2]==1)
               {
                   m3atrix[*it2][ij] = m3atrix[ij][*it2] = 1;
-                  // m3atrix[*it2][ij] = m3atrix[ij][*it2] = 1;
-                  
+     
               }
               }
           }
@@ -240,8 +218,6 @@ int same = 1;
     }
     
     
-    
-  // cout<<"fuck\n";
 } 
 
 
@@ -251,7 +227,7 @@ while (newnomore == 0);
 
 for (int matvar2 = 0; matvar2 < n; matvar2++)
 {
-//    count+=m3atrix[0][matvar2];
+
    count+=m2atrix[0][matvar2];
 
 
@@ -264,7 +240,6 @@ cout<<count;
 
 for (int ij = 0; ij < n; ij++)
 {
-  // matrix1[ij] = new int[n];
   delete []matrix1[ij];
   delete []m2atrix[ij];
   delete []m3atrix[ij];
