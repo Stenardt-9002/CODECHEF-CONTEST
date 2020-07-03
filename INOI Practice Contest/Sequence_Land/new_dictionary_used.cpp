@@ -80,7 +80,40 @@ int main(int argc, char const *argv[])
   }
 
 
+
+
 //test
+  // for (int trrow = 0; trrow < n; trrow++)
+  // {
+  //   cout<<"\n";
+  //   for (unsigned int tr = 0; tr < vect[trrow].size(); tr++)
+  //   {
+  //     cout<<vect[trrow][tr]<<" ";
+
+  //   }
+  // }
+
+
+
+//search
+
+
+  for (int i = 0; i < n; i++)
+  {
+    for (unsigned int ij = 0; ij < vect[i].size(); ij++)
+    {
+      
+    }
+    
+  }
+
+
+
+
+
+
+
+
 
 
 
@@ -89,8 +122,8 @@ int main(int argc, char const *argv[])
 //create update matrix
 // for every successfamily member check if related to non family member
 // update value and its mirror
-int **m2atrix = new int*[n];
-int **m3atrix = new int*[n];
+// int **m2atrix = new int*[n];
+// int **m3atrix = new int*[n];
 
 
 
@@ -242,8 +275,8 @@ int **m3atrix = new int*[n];
 for (int ij = 0; ij < n; ij++)
 {
   delete []matrix1[ij];
-  delete []m2atrix[ij];
-  delete []m3atrix[ij];
+  // delete []m2atrix[ij];
+  // delete []m3atrix[ij];
 
 }
 
@@ -251,8 +284,8 @@ for (int ij = 0; ij < n; ij++)
 
 
 delete [] matrix1;
-delete [] m2atrix;
-delete [] m3atrix;
+// delete [] m2atrix;
+// delete [] m3atrix;
 
 
   return 0;

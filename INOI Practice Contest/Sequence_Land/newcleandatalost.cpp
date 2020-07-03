@@ -143,11 +143,11 @@ for (int ij = 0; ij < n; ij++)
   successfamily.clear();unccessfamily.clear();
 
 }
-
+int tempctr1 = 0;
 int newnomore = 0;
 do
 {
-
+  tempctr1++;
         for (int ij = 0; ij < n; ij++)
         {
             for (int ji = 0; ji < n; ji++)
@@ -221,14 +221,14 @@ int same = 1;
 } 
 
 
-while (newnomore == 0);
+while (newnomore == 0 && tempctr1 <2);
 
 
 
 for (int matvar2 = 0; matvar2 < n; matvar2++)
 {
 
-   count+=m2atrix[0][matvar2];
+   count+=m3atrix[0][matvar2];
 
 
 }
