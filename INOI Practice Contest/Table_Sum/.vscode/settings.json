@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "iostream": "cpp",
+        "vector": "cpp"
+    },
+    "python.pythonPath": "/home/frooti/Desktop/pythonvenv/generalenv/bin/python3.8"
+}
