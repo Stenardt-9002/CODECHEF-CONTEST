@@ -127,7 +127,7 @@ int main(int argc, char const *argv[])
             int tempiter1 = iter1;
 
                 sort(ok.begin(),ok.end(),compareStructDaat);
-                if (iter1 >0 && tempiter1>iter1/2)
+                if (iter1 >0 && tempiter1-i1>iter1/2)
                 {
                     /* code */
                 ok.pop_back();
