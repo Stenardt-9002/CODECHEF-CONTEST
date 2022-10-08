@@ -1,5 +1,4 @@
-
-
+// https://www.codechef.com/submit/EVENSPLIT
 
 
 
@@ -37,17 +36,25 @@ int main(int argc, char const *argv[])
     cin>>testcase;
     while (testcase--)
     {
-        int a1 ,b0 ;
-        cin>>a1>>b0 ;
-
-        if((a1%2==1&&b0%2==1)||a1==0||b0==0)
-            cout<<"No"<<endl ;
-        else 
-            cout<<"Yes"<<endl ;
-
-
-
-
+        int size ;
+        cin>>size ;
+        string n;
+        cin>>n ;
+        if(size>2)
+        {
+            int count1 = 0 ,i1=0;
+            for(i1 = 0 ; i1<n.size();i1++)
+                if(n[i1]=='1')
+                    count1++ ;
+            string connect = "";
+            for (int j1 = 0; j1 < size-count1; j1++)
+                connect+="0";
+            for (int j1 = 0; j1 < count1; j1++)
+                connect+="1";
+            n= connect ;
+        }
+        cout<<n<<endl ;
+    
     }
     return 0 ;
 }

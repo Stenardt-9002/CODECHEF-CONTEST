@@ -28,10 +28,6 @@ bool isPrime(int n)
   return true;
 }
 
-// C++ program to print all primes smaller than or equal to
-// n using Sieve of Eratosthenes
-#include <bits/stdc++.h>
-using namespace std;
  
 set<int> SieveOfEratosthenes(int n)
 {

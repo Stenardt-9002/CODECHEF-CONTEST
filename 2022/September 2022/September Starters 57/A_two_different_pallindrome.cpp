@@ -1,6 +1,6 @@
 
 // https://www.codechef.com/START57B/problems/TWODIFFPALIN
-
+// https://discuss.codechef.com/t/twodiffpalin-editorial/103305
 
 
 #include <bits/stdc++.h>
